@@ -1,0 +1,267 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+@font-face {
+  src: url(../fonts/Satisfy/Satisfy-Regular.ttf);
+  font-family: satisfy;
+}
+@font-face {
+  src: url(../fonts/Lobster/Lobster-Regular.ttf);
+  font-family: lobster;
+}
+
+@font-face {
+  src: url(../fonts/El_Messiri/ElMessiri-Regular.ttf);
+  font-family: newFont;
+}
+@font-face {
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+  font-family: poppins;
+}
+
+:root {
+  --firstColor: #353755;
+  --secondColor: #e0e4ee;
+  --thirdColor: #5bd3c7;
+}
+
+body {
+  background-color: var(--secondColor);
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+  /* padding: 2px; */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--firstColor);
+  border: 1px solid rgb(255, 255, 255);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.social_buttons {
+  /* background: var(--firstColor); */
+}
+
+.social_icon {
+  background: var(--firstColor);
+}
+.nav_bar {
+  background-color: var(--firstColor);
+}
+
+.nav_logo {
+  font-size: 22px !important;
+  color: red;
+  font-family: lobster;
+  letter-spacing: 1.5px;
+  /* font-style: oblique; */
+  margin-left: 50px;
+}
+.progress_animate {
+  margin: 0;
+  position: relative;
+  background: var(--secondColor);
+  display: none;
+}
+.progress_animate > .indeterminate {
+  background: var(--thirdColor);
+}
+
+.parent_carousel {
+  height: calc(100vh - 112px) !important;
+  width: 100%;
+}
+.bg_carousel {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+.first_carousel {
+  background-image: url(../img/coopration.jpg);
+}
+.second_carousel {
+  background-image: url(../img/coopration\ 2.jpg);
+}
+.third_carousel {
+  background-image: url(../img/ffdgd.jpg);
+}
+.fourth_carousel {
+  background-image: url(../img/thisisengineering-raeng-pIdteYOzGFY-unsplash.jpg);
+}
+/* .list_active {
+  position: absolute;
+  top: 0px;
+  z-index: 90000000;
+  background-color: #353755 !important;
+} */
+.list_active li.tab a {
+  color: white !important;
+  /* background: var(--thirdColor); */
+}
+.list_active li.tab a.active {
+  color: white !important;
+  background: var(--thirdColor);
+}
+
+.big_section {
+  background: white;
+}
+.collapsible_section {
+  min-height: 75vh;
+  background-color: white;
+  padding: 100px 5px 50px 5px;
+  width: 100%;
+  margin-top: 80px;
+}
+.title_collapsible {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.parg_collapsible {
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 20px;
+  font-size: 18spx;
+}
+.collapisble_list {
+  width: 1280px;
+  margin: auto;
+}
+.collapisble_list > li {
+}
+
+/* .collaps_details .title_collaps {
+  width: 580px !important;
+  background: blue !important;
+} */
+.guide_section {
+  background: white;
+  width: 100%;
+  /* height: 100vh; */
+  padding: 100px 20px 100px 20px;
+  /* padding: 20px; */
+  position: relative;
+}
+.big_section_guide {
+  position: relative;
+  /* overflow-x: hidden; */
+}
+
+.title_guide {
+  text-align: center;
+  padding: 0px 5px 0px 5px;
+}
+.parg_guide {
+  text-align: center;
+  font-size: 18px;
+  padding: 0px 5px 90px 5px;
+  color: gray;
+}
+
+.guide_items {
+  /* background: #eee; */
+}
+
+.guide_item {
+  /* background: #eee; */
+  padding: 20px !important;
+}
+.guide_item > img {
+  width: 80px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.guide_item > h5 {
+  color: gray;
+  text-align: center;
+}
+.guide_item > p {
+  color: #aaa;
+  text-align: center;
+}
+
+.enquiry_section {
+  min-height: 100vh;
+  position: relative;
+  /* display: none; */
+  width: 100%;
+  background: rgb(240, 14, 14);
+  padding: 50px 0px;
+}
+.nationality {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddd !important;
+}
+
+.natio_form {
+  width: 100% !important;
+  margin: auto;
+  display: grid;
+  background-color: #eee;
+  padding: 20px;
+  min-height: 60vh;
+}
+.natio_title {
+  font-size: 25px;
+  justify-self: center;
+  padding-bottom: 20px;
+  font-family: poppins;
+  font-weight: bolder;
+  /* border-bottom: 1px solid black; */
+}
+.natio_select {
+  min-width: 350px;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.footer_part {
+  background-color: var(--firstColor);
+}
+
+.logo_footer {
+  font-family: lobster;
+}
+@media (max-width: 1280px) {
+  .nav_logo {
+    margin-left: 0px;
+    font-size: 18px !important;
+  }
+  .collapisble_list {
+    width: 97%;
+    margin: auto;
+  }
+
+  .natio_form {
+    width: 60% !important;
+  }
+  .natio_select {
+    min-width: 150px;
+  }
+}
+/*# sourceMappingURL=cooprate.css.map */
