@@ -49,6 +49,7 @@ $(document).ready(function () {
         zIndex: "1",
         top: "0px",
         backgroundColor: "#353755ca",
+        boxShadow: "2px 2px 10px gray",
       });
       $(".progress_animate").css({
         position: "fixed",
@@ -60,6 +61,7 @@ $(document).ready(function () {
       $(".list_active").css({
         position: "relative",
         backgroundColor: "#353755",
+        boxShadow: "2px 2px 0px gray",
       });
       $(".progress_animate").css({
         position: "relative",
@@ -70,12 +72,31 @@ $(document).ready(function () {
   });
 
   $(".list_active .tab a").on("click", function () {
+    console.log("hello");
     $(this)
       .addClass("active")
       .parent()
       .siblings()
       .find("a")
       .removeClass("active");
+    if ($(".list_active rat a").hasClass("active")) {
+      $(".rating").css({
+        display: "block",
+      });
+    } else if ($(".list_active gen a").hasClass("active")) {
+      $(".gender").css({
+        display: "block",
+      });
+    } else if ($(".list_active caree a").hasClass("active")) {
+      $(".career").css({
+        display: "block",
+      });
+    } else if ($(".list_active nat a").hasClass("active")) {
+      $(".nationality").css({
+        display: "block",
+      });
+    }
+    $(".enquiry_section").fadeOut();
   });
 
   var guideSection = $(".big_section_guide").offset().top - 100;

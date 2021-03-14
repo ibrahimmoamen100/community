@@ -28,28 +28,32 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/cooprate.css" />
-    <title>Enquiry</title>
+    <title>الاستجوابات</title>
   </head>
 
   <body>
     <div class="nav_section">
       <nav class="nav-extended nav_bar">
         <div class="nav-wrapper">
-          <a href="#" class="nav_logo brand-logo">Developer Community</a>
+          <a href="#" class="nav_logo brand-logo">مجتمع المطورين</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"
             ><i class="material-icons">menu</i></a
           >
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./section.html">Enquiry</a></li>
+            <li><a href="./index.html">الصفحة الرئيسية</a></li>
+            <li>
+              <a class="" href="./sign.html"> تسجيل الدخول</a>
+            </li>
           </ul>
         </div>
         <div class="nav-content">
           <ul class="tabs tabs-transparent list_active">
-            <li class="tab"><a href="#test-swipe-1">Nationality</a></li>
-            <li class="tab"><a href="#test-swipe-2">Rating In English </a></li>
-            <li class="tab"><a href="#test-swipe-3">Gender</a></li>
-            <li class="tab"><a href="#test-swipe-4">Career</a></li>
+            <li class="tab nat"><a href="#test-swipe-1">الجنسيه</a></li>
+            <li class="tab rat">
+              <a href="#test-swipe-2">تقييمك في الانجليزي</a>
+            </li>
+            <li class="tab gen"><a href="#test-swipe-3">نوع الجنس</a></li>
+            <li class="tab caree"><a href="#test-swipe-4">مهنتك</a></li>
           </ul>
           <div class="progress progress_animate">
             <div class="indeterminate"></div>
@@ -58,30 +62,29 @@
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./section.html">Enquiry</a></li>
+        <li><a href="./sign.html">تسجيل الدخول </a></li>
+
+        <li><a href="./index.html">الصفحة الرئيسية</a></li>
       </ul>
     </div>
     <!-- End Nav Section -->
-    <section id="test-swipe-1" class="enquiry_section nationality red">
+    <section id="test-swipe-1" class="enquiry_section nationality">
       <div class="container">
         <form action="" class="natio_form">
-          <span class="natio_title">What Is Your Nationality</span>
+          <span class="natio_title">ما هي جنسيتك</span>
           <div class="input-field col s12 natio_select">
             <select class="icons">
-              <option value="" disabled selected>Choose your Country</option>
-              <option value="1" data-icon="./img/eg.svg">Egypt</option>
-              <option value="2" data-icon="./img/soudi.svg">
-                Soudi Arabia
-              </option>
-              <option value="3" data-icon="./img/tonis.svg">Tunisia</option>
-              <option value="3" data-icon="./img/lebnon.svg">Lebanon</option>
-              <option value="3" data-icon="./img/lebia.jpg">Libya</option>
-              <option value="3" data-icon="./img/sudan.svg">Sudan</option>
-              <option value="4" data-icon="./img/algeria.jpg">Algeria</option>
-              <option value="2" data-icon="./img/morocco.png">Morocco</option>
+              <option value="" disabled selected>اختار دولتك</option>
+              <option value="1" data-icon="./img/eg.svg">مصر</option>
+              <option value="2" data-icon="./img/soudi.svg">السعوديه</option>
+              <option value="3" data-icon="./img/tonis.svg">تونس</option>
+              <option value="3" data-icon="./img/lebnon.svg">لبنان</option>
+              <option value="3" data-icon="./img/lebia.jpg">ليبيا</option>
+              <option value="3" data-icon="./img/sudan.svg">السودان</option>
+              <option value="4" data-icon="./img/algeria.jpg">الجزائر</option>
+              <option value="2" data-icon="./img/morocco.png">المغرب</option>
             </select>
-            <label>Select Your Country</label>
+            <label>اختار دولتك</label>
           </div>
           <p>
             <label>
@@ -95,19 +98,19 @@
         </form>
       </div>
     </section>
-    <section id="test-swipe-2" class="enquiry_section rating blue">
-      <div class="container">Rating In English</div>
+    <section id="test-swipe-2" class="enquiry_section rating">
+      <div class="container">تقييمك في الانجليزي</div>
     </section>
-    <section id="test-swipe-3" class="enquiry_section gender green">
-      <div class="container">Gender</div>
+    <section id="test-swipe-3" class="enquiry_section gender">
+      <div class="container">نوع الجنس</div>
     </section>
     <section id="test-swipe-4" class="enquiry_section career">
-      <div class="container">Career</div>
+      <div class="container">مهنتك</div>
     </section>
 
     <!--  Part Sections -->
-    <!-- 
-    <div class="parts_section">
+
+    <!-- <div class="parts_section">
       <div id="test-swipe-1" class="col s12 blue">
         <section class="enquiry_section nationality">
           <div class="container">nationality</div>
@@ -137,21 +140,23 @@
         <div class="container">
           <div class="row">
             <div class="col l6 s12">
-              <h5 class="white-text logo_footer">Developer Community</h5>
+              <h5 class="white-text logo_footer">مجتمع المطورين</h5>
               <p class="grey-text text-lighten-4">
-                We Try to Make Environment Better to The Developers .
+                نحاول ان نجل بيئه المطورين افضل
               </p>
             </div>
             <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">What Do You Want</h5>
+              <h5 class="white-text">بعض الروابط</h5>
               <ul>
                 <li>
-                  <a class="grey-text text-lighten-3" href="#home">Home</a>
+                  <a class="grey-text text-lighten-3" href="#home"
+                    >الصفحة الرئيسية</a
+                  >
                 </li>
 
                 <li>
-                  <a class="grey-text text-lighten-3" href="./section.html"
-                    >Enquiry</a
+                  <a class="grey-text text-lighten-3" href="./sign.html"
+                    >تسجيل الدخول</a
                   >
                 </li>
               </ul>
@@ -162,7 +167,7 @@
           <div class="container">
             © 2021 Copyright By Developer Community
             <a class="grey-text text-lighten-4 right" href="./index.html"
-              >Home Page</a
+              >الصفحة الرئيسية</a
             >
           </div>
         </div>

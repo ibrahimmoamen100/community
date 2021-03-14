@@ -18,7 +18,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="css/cooprate.css" />
 
-  <title>Developer Community</title>
+  <title>مجتمع المبرمجين</title>
 </head>
 
 <body>
@@ -80,20 +80,21 @@
   <div class="nav_section">
     <nav class="nav-extended nav_bar">
       <div class="nav-wrapper">
-        <a href="#" class="nav_logo brand-logo">Developer Community</a>
+        <a href="#" class="nav_logo brand-logo">مجتمع المطورين</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a class="waves-effect waves-light" href="./index.html">Home</a>
+            <a class="waves-effect waves-light modal-trigger" href="#modal1">نبذه عنا</a>
+          </li>
+          <li><a class="waves-effect waves-light  modal-trigger" href="#modal2">شكر كبير </a>
           </li>
           <li>
-            <a class="waves-effect waves-light modal-trigger" href="#modal1">About Us</a>
-          </li>
-          <li><a class="waves-effect waves-light  modal-trigger" href="#modal2">Big Thanks</a>
+          <li><a href="./section.html">صفحة الاستجوابات </a></li>
           </li>
           <li>
-            <a class="waves-effect waves-light" href="./section.html">Enquiry</a>
+          <li><a href="">تسجيل الدخول</a></li>
           </li>
+
         </ul>
         <!-- Modal Structure -->
 
@@ -101,9 +102,9 @@
 
       <div class="nav-content">
         <ul class="tabs tabs-transparent list_active list_actives">
-          <li class="tab"><a class="guide" href="#test1">Guide</a></li>
+          <li class="tab"><a class="guide" href="#test1">الارشادات</a></li>
           <li class="tab">
-            <a class="question" href="#test2"> Common Questions</a>
+            <a class="question" href="#test2"> اﻷسألة الشائعة</a>
           </li>
         </ul>
         <div class="progress progress_animate">
@@ -113,15 +114,24 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./section.html">Enquiry</a></li>
+      <li><a href="">تسجيل الدخول </a></li>
+      <li><a href="./section.html">الاستجوابات</a></li>
       <li>
-        <a class="waves-effect waves-light modal-trigger" href="#modal1">About Us</a>
+        <a class="waves-effect waves-light modal-trigger" href="#modal1">نبذه عنا</a>
       </li>
     </ul>
   </div>
   <div class="big_section">
-    <div class="carousel carousel-slider center parent_carousel">
+    <div class="parent_carousel">
+      <div class="container child_carousel">
+        <h3 class="carousel_title">نحاول ربط المطورين ببعض</h3>
+        <span class="carousel_desc">هل تبحث عن مبرمج مثلك يساعدك في إكمال مشروعك</span>
+        <img class="carousel_img" src="./img/undraw_shared_workspace_hwky.svg" alt="img carousel">
+        <button class="carousel_btn">اقرأ الارشادات في الاسفل</button>
+      </div>
+
+    </div>
+    <!-- <div class="carousel carousel-slider center parent_carousel">
       <div class="carousel-fixed-item center">
         <a href="./section.html" class="btn waves-effect white grey-text darken-text-2">Ready to Become One Of Us</a>
       </div>
@@ -138,12 +148,12 @@
           We help improve developers' environment and save their time
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
   <div class="parts_section">
     <div id="test1" class="col s12 section scrollspy  big_section big_section_guide">
       <div class="guide_section container">
-        <h4 class="title_guide">Guide Section</h4>
+        <h4 class="title_guide"> الارشادات</h4>
         <p class="parg_guide">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
           deserunt!
@@ -202,7 +212,7 @@
     </div>
     <div id="test2" class="col s12 big_section big_collapsible_section">
       <div class="container collapsible_container collapsible_section">
-        <h4 class="title_collapsible">Frequently Asked Question</h4>
+        <h4 class="title_collapsible"> الاسأله الشائعة</h4>
         <p class="parg_collapsible">
           The Question in your Mind or Meybe you will Think About it
         </p>
@@ -283,21 +293,22 @@
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
-            <h5 class="white-text logo_footer">Developer Community</h5>
+            <h5 class="white-text logo_footer">مجتمع المطورين</h5>
             <p class="grey-text text-lighten-4">
-              We Try to Make Environment Better to The Developers .
+              نحاول ان نجل بيئه المطورين افضل
             </p>
           </div>
           <div class="col l4 offset-l2 s12">
-            <h5 class="white-text">Some Helps Links</h5>
+            <h5 class="white-text">بعض الروابط</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="#home">Home</a>
+                <a class="grey-text text-lighten-3" href="./sign.html"> تسجيل الدخول</a>
               </li>
 
               <li>
-                <a class="grey-text text-lighten-3" href="./section.html">Enquiry</a>
+                <a class="grey-text text-lighten-3" href="./section.html">الاستجوابات</a>
               </li>
+
             </ul>
           </div>
         </div>
@@ -305,7 +316,7 @@
       <div class="footer-copyright">
         <div class="container">
           © 2021 Copyright By Developer Community
-          <a class="grey-text text-lighten-4 right" href="./section.html">Enquiry Page</a>
+          <a class="grey-text text-lighten-4 right" href="./section.html">صفحه الاستجوابات</a>
         </div>
       </div>
     </footer>

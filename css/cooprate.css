@@ -5,6 +5,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  font-family: kufam;
 }
 
 @font-face {
@@ -23,6 +24,10 @@
 @font-face {
   src: url(../fonts/Poppins/Poppins-Regular.ttf);
   font-family: poppins;
+}
+@font-face {
+  src: url(../fonts/Kufam/Kufam-VariableFont_wght.ttf);
+  font-family: kufam;
 }
 
 :root {
@@ -69,7 +74,7 @@ body {
 .nav_logo {
   font-size: 22px !important;
   color: red;
-  font-family: lobster;
+  font-family: kufam;
   letter-spacing: 1.5px;
   /* font-style: oblique; */
   margin-left: 50px;
@@ -83,36 +88,63 @@ body {
 .progress_animate > .indeterminate {
   background: var(--thirdColor);
 }
-
+.big_section {
+  background: white;
+  margin: auto;
+}
 .parent_carousel {
   height: calc(100vh - 112px) !important;
   width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
-.bg_carousel {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
+.child_carousel {
+  display: grid;
+  grid-template-areas: ". . . ." ". . . ." "title title img img" "desc desc img img" "btn btn btn btn";
+  height: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  grid-gap: 10px;
 }
-.first_carousel {
-  background-image: url(../img/coopration.jpg);
+.carousel_title {
+  /* font-size: 30px; */
+  padding: 0;
+  margin: 0;
+  grid-area: title;
+  padding: 10px;
 }
-.second_carousel {
-  background-image: url(../img/coopration\ 2.jpg);
+.carousel_desc {
+  font-size: 1.2rem;
+  grid-area: desc;
+  text-transform: lowercase;
+  color: rgb(156, 156, 156);
 }
-.third_carousel {
-  background-image: url(../img/ffdgd.jpg);
+.carousel_img {
+  width: 450px;
+  height: auto;
+  padding: 10px;
+  grid-area: img;
 }
-.fourth_carousel {
-  background-image: url(../img/thisisengineering-raeng-pIdteYOzGFY-unsplash.jpg);
+.carousel_btn {
+  padding: 10px 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: var(--firstColor);
+  color: white;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.411);
+  min-width: 250px;
+  box-shadow: 5px 5px 20px gray;
+  font-family: kufam;
+  grid-area: btn;
+  justify-self: center;
+  align-self: center;
 }
-/* .list_active {
-  position: absolute;
-  top: 0px;
-  z-index: 90000000;
-  background-color: #353755 !important;
-} */
+.carousel_btn:hover {
+  background-color: var(--thirdColor);
+  color: black;
+}
+
 .list_active li.tab a {
   color: white !important;
   /* background: var(--thirdColor); */
@@ -122,9 +154,6 @@ body {
   background: var(--thirdColor);
 }
 
-.big_section {
-  background: white;
-}
 .collapsible_section {
   min-height: 75vh;
   background-color: white;
@@ -206,7 +235,7 @@ body {
 .enquiry_section {
   min-height: 100vh;
   position: relative;
-  /* display: none; */
+  display: none;
   width: 100%;
   background: rgb(240, 14, 14);
   padding: 50px 0px;
@@ -215,22 +244,24 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ddd !important;
+  background-color: #fff !important;
 }
 
 .natio_form {
   width: 100% !important;
   margin: auto;
   display: grid;
-  background-color: #eee;
+  background-color: #fff;
   padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.144);
+
   min-height: 60vh;
 }
 .natio_title {
   font-size: 25px;
   justify-self: center;
   padding-bottom: 20px;
-  font-family: poppins;
+  font-family: kufam;
   font-weight: bolder;
   /* border-bottom: 1px solid black; */
 }
@@ -245,7 +276,7 @@ body {
 }
 
 .logo_footer {
-  font-family: lobster;
+  font-family: kufam;
 }
 @media (max-width: 1280px) {
   .nav_logo {
@@ -262,6 +293,22 @@ body {
   }
   .natio_select {
     min-width: 150px;
+  }
+  .child_carousel {
+    grid-template-areas: ". . . ." ". . . ." "title title title title" "img img img img" "desc desc desc desc" ". . . ." "btn btn btn btn";
+  }
+
+  .carousel_title {
+    font-size: 35px;
+    text-align: center;
+  }
+  .carousel_desc {
+    text-align: center;
+  }
+  .carousel_img {
+    width: 400px;
+    height: auto;
+    margin: auto;
   }
 }
 /*# sourceMappingURL=cooprate.css.map */
